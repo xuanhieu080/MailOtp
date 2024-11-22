@@ -4,7 +4,7 @@ namespace XuanHieu\MailOtp;
 
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
-use Xuanhieu080\MailOtp\Services\MailOtpService;
+use Xuanhieu\MailOtp\Services\MailOtpService;
 
 class MailOtpServiceProvider extends ServiceProvider
 {

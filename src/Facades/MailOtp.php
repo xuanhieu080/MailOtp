@@ -1,6 +1,6 @@
 <?php
 
-namespace Xuanhieu080\MailOtp\Facades;
+namespace Xuanhieu\MailOtp\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

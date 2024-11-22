@@ -1,6 +1,6 @@
 <?php
 
-namespace Xuanhieu080\MailOtp\Services;
+namespace Xuanhieu\MailOtp\Services;
 
 use Illuminate\Support\Facades\Crypt;
 use XuanHieu\MailOtp\Jobs\SendMail;
