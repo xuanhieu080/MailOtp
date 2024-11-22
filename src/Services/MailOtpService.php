@@ -32,7 +32,7 @@ class MailOtpService
             );
     }
 
-    public function validateOtp($email, $otp)
+    public function checkOtp($email, $otp)
     {
         $record = MailOtp::query()
             ->where('email', $email)
@@ -43,7 +43,7 @@ class MailOtpService
         return $record !== null;
     }
 
-    public function validateHash($hash)
+    public function checkHash($hash)
     {
         $record = MailOtp::query()
             ->where('hash', $hash)
