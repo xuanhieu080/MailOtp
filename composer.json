@@ -1,0 +1,31 @@
+{
+    "name": "xuanhieu080/mail-otp",
+    "description": "Mail otp",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Xuanhieu080\\MailOtp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "HieuPX",
+            "email": "xuanhieu.ht96@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Xuanhieu080\\MailOtp\\MailOtpServiceProvider"
+            ],
+            "aliases": {
+                "MailOtp": "Xuanhieu080\\MailOtp\\Facades\\MailOtp"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
