@@ -2,6 +2,7 @@
     "name": "xuanhieu080/mail-otp",
     "description": "Mail otp",
     "type": "library",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Xuanhieu080\\MailOtp\\": "src/"
@@ -25,7 +26,5 @@
                 "MailOtp": "Xuanhieu080\\MailOtp\\Facades\\MailOtp"
             }
         }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
