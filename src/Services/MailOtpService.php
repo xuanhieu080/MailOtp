@@ -43,6 +43,11 @@ class MailOtpService
         return $record !== null;
     }
 
+    public function delete(MailOtp $mailOtp)
+    {
+        return $mailOtp->delete();
+    }
+
     public function sendOtpEmail($email, $data = [], $view = 'MailOtp::emails.otp', $subject = 'Your OTP Code')
     {
         $details['to'] = $email;
