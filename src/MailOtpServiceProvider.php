@@ -24,7 +24,7 @@ class MailOtpServiceProvider extends ServiceProvider
         ], 'migrations');
 
         // Load views
-        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'otp');
+        $this->loadViewsFrom(__DIR__ . '/resources/views', 'otp');
         View::addNamespace('MailOtp', resource_path('views/vendor/mail-otp'));
     }
 
@@ -34,6 +34,6 @@ class MailOtpServiceProvider extends ServiceProvider
             return new MailOtpService();
         });
         // Merge config
-        $this->mergeConfigFrom(__DIR__ . '/../config/mail-otp.php', 'mail-otp');
+        $this->mergeConfigFrom(__DIR__ . '/config/mail-otp.php', 'mail-otp');
     }
 }
