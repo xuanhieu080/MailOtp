@@ -9,7 +9,7 @@ use Illuminate\Support\Carbon;
 
 class MailOtpService
 {
-    public function generateOtp($email, $length = 6, $dataType = 0, $view = 'MailOtp::emails.otp', $subject = 'Your OTP Code')
+    public function generateOtp($email, $length = 6, $dataType = 0)
     {
         $characters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 

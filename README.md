@@ -3,5 +3,5 @@
 ## About Laravel
 
 Sử dụng lệnh php artisan vendor:publish --provider="XuanHieu080\MailOtp\MailOtpServiceProvider" --tag="views" để xuất bản view (có thể không cần)
-Sử dụng lệnh php artisan vendor:publish --provider="XuanHieu080\MailOtp\MailOtpServiceProvider" --tag="databases" để xuất bản databases
+Sử dụng lệnh php artisan vendor:publish --provider="XuanHieu080\MailOtp\MailOtpServiceProvider" --tag="migrations" để xuất bản migrations
 Sử dụng lệnh php artisan vendor:publish --provider="XuanHieu080\MailOtp\MailOtpServiceProvider" --tag="config" để xuất bản config
