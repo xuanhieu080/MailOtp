@@ -43,14 +43,12 @@ class MailOtpService
         return $record !== null;
     }
 
-    public function checkHash($hash)
+    public function getItem($hash)
     {
-        $record = MailOtp::query()
+        return MailOtp::query()
             ->where('hash', $hash)
             ->where('expires_at', '>', now())
             ->first();
-
-        return $record !== null;
     }
 
     public function delete(MailOtp $mailOtp)
