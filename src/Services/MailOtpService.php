@@ -22,7 +22,6 @@ class MailOtpService
         $shuffled = str_shuffle($characters);
         $otp = substr($shuffled, 0, $length);
         $expiresAt = Carbon::now()->addMinutes(config('mail-otp.otp_expiry'));
-
         $hash = $this->encrypt(['email' => $email, 'expires_at' => $expiresAt]);
 
         return MailOtp::query()
